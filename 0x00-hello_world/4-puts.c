@@ -1,16 +1,10 @@
-/*
- * Header files
- * string.h contains strcpy
- */
-
 # include <stdio.h>
 # include <string.h>
 
-/*
+/**
  * main - Entry point
  *
- * Return: prints exactly \"Programming is like building a 
- * multilingual puzzle, followed by a new line.
+ * Return: Always 0 (Success)
  */
 
 int main(void)
