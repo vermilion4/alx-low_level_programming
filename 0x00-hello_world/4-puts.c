@@ -7,8 +7,10 @@
 # include <string.h>
 
 /*
- * prints exactly \"Programming is like building a multilingual puzzle, 
- * followed by a new line.
+ * main - Entry point
+ *
+ * Return: prints exactly \"Programming is like building a 
+ * multilingual puzzle, followed by a new line.
  */
 
 int main(void)
