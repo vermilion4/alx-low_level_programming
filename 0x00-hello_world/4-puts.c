@@ -1,5 +1,15 @@
+/*
+ * Header files
+ * string.h contains strcpy
+ */
+
 # include <stdio.h>
 # include <string.h>
+
+/*
+ * prints exactly \"Programming is like building a multilingual puzzle, 
+ * followed by a new line.
+ */
 
 int main(void)
 {
@@ -9,5 +19,5 @@ int main(void)
 
 	puts(str1);
 
-	return(0);
+	return (0);
 }
