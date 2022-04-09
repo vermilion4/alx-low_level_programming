@@ -17,7 +17,7 @@ int main(void)
 		c = 0;
 		while (c <= 9)
 		{
-			if (i != c && i < c)
+			if (i < c)
 			{
 			putchar((i % 10) + '0');
 			putchar((c % 10) + '0');
