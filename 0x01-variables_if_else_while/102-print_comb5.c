@@ -21,7 +21,7 @@ int main(void)
 				d = 48;
 				while (d <= 57)
 				{
-					if ((a == c && b < d) || (a < c && b <= d))
+					if ((a == c && b < d) || (a < c && b <= d) || (a < c && b >= d))
 					{
 					putchar(a);
 					putchar(b);
