@@ -47,7 +47,6 @@ _putchar(last + '0');
 if (j != n)
 {
 _putchar(',');
-_putchar(' ');
 }
 continue;
 }
