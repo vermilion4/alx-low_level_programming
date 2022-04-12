@@ -35,8 +35,8 @@ _putchar(last + '0');
 }
 else
 {
-_putchar(first + '0');
-_putchar(second + '0');
+_putchar((mult / 100) + '0');
+_putchar(((mult - 100) / 10) + '0');
 _putchar(last + '0');
 }
 if (j != n)
