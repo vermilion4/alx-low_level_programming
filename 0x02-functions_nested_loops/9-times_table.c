@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * times_table - prints the time from 00:00 to 23:59
+ * times_table - prints 9 timestable
  *
  * Return: 0
  */
