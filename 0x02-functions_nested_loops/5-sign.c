@@ -2,7 +2,7 @@
 
 /**
  * print_sign - prints the sign of a number
- * @c: parameter
+ * @n: parameter
  *
  * Return: 1 if > 0, 0 if 0, -1 if < 0
  */
@@ -25,5 +25,5 @@ else
 _putchar('-');
 return (-1);
 }
-
 }
+
