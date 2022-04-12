@@ -23,8 +23,11 @@ last = mult % 10;
 
 if (mult < 10)
 {
+if (j >= 1)
+{
 _putchar(' ');
 _putchar(first + ' ');
+}
 _putchar(last + '0');
 }
 else if (mult < 100)
