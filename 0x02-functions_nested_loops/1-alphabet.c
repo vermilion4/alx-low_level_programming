@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * main - print alphabet
  *
@@ -7,7 +7,7 @@
  */
 
 
-int main(void)
+void print_alphabet(void)
 {
 	char c = 'a';
 
@@ -17,5 +17,4 @@ int main(void)
 		c++;
 	}
 	putchar('\n');
-	return (0);
 }
