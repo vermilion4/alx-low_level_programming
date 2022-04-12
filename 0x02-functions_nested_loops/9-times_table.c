@@ -19,8 +19,8 @@ first = mult / 10;
 last = mult % 10;
 if (first == 0)
 {
-_putchar((first) + ' ');
-_putchar((last) + '0');
+_putchar(first + ' ');
+_putchar(last + '0');
 if (j != 9)
 {
 _putchar(',');
@@ -28,8 +28,8 @@ _putchar(' ');
 }
 continue;
 }
-_putchar((first) + '0');
-_putchar((last) + '0');
+_putchar(first + '0');
+_putchar(last + '0');
 if (j != 9)
 {
 _putchar(',');
