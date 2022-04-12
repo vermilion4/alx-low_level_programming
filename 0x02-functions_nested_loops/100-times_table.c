@@ -25,13 +25,13 @@ if (first == 0)
 {
 if (j >= 1)
 {
+_putchar(' ');
 _putchar(first + ' ');
 }
 _putchar(last + '0');
 if (j != n)
 {
 _putchar(',');
-_putchar(' ');
 _putchar(' ');
 }
 continue;
@@ -47,10 +47,12 @@ _putchar(last + '0');
 if (j != n)
 {
 _putchar(',');
+_putchar(' ');
 }
 continue;
 }
 
+_putchar(' ');
 _putchar(first + '0');
 _putchar(last + '0');
 
@@ -58,7 +60,7 @@ if (j != n)
 {
 _putchar(',');
 _putchar(' ');
-_putchar(' ');
+
 }
 }
 _putchar('\n');
