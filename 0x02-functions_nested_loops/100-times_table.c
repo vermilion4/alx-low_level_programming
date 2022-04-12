@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * times_table - prints n timestable
+ * print_times_table - prints n timestable
  *
  * @n: parameter
  * Return: 0
@@ -21,46 +21,28 @@ mult = i * j;
 first = mult / 10;
 last = mult % 10;
 
-if (first == 0)
-{
-if (j >= 1)
+if (mult < 10)
 {
 _putchar(' ');
 _putchar(first + ' ');
-}
 _putchar(last + '0');
-if (j != n)
+}
+else if (mult < 100)
 {
-_putchar(',');
 _putchar(' ');
+_putchar(first + '0');
+_putchar(last + '0');
 }
-continue;
-}
-
-if (mult >= 100)
+else
 {
-first = mult / 100;
-second = (mult - 100) / 10;
 _putchar(first + '0');
 _putchar(second + '0');
 _putchar(last + '0');
+}
 if (j != n)
 {
 _putchar(',');
 _putchar(' ');
-}
-continue;
-}
-
-_putchar(' ');
-_putchar(first + '0');
-_putchar(last + '0');
-
-if (j != n)
-{
-_putchar(',');
-_putchar(' ');
-
 }
 }
 _putchar('\n');
