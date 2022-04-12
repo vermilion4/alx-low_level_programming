@@ -17,9 +17,12 @@ for (j = 0; j <= 9; j++)
 mult = i * j;
 first = mult / 10;
 last = mult % 10;
-if (first == 0 && j >= 1)
+if (first == 0)
+{
+if( j >= 1)
 {
 _putchar(first + ' ');
+}
 _putchar(last + '0');
 if (j != 9)
 {
