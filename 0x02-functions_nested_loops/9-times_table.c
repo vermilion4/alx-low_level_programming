@@ -21,14 +21,20 @@ if (first == 0)
 {
 _putchar((first) + ' ');
 _putchar((last) + '0');
+if (j != 9)
+{
 _putchar(',');
 _putchar(' ');
+}
 continue;
 }
 _putchar((first) + '0');
 _putchar((last) + '0');
+if (j != 9)
+{
 _putchar(',');
 _putchar(' ');
+}
 }
 _putchar('\n');
 }
