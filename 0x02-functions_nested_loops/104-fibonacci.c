@@ -23,6 +23,5 @@ break;
 }
 printf("%lu, ", next);
 }
-
 return (0);
 }
