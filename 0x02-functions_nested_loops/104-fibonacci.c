@@ -18,7 +18,7 @@ j = k;
 k = next;
 if (i == 97)
 {
-printf("%lu\n", next);
+printf("%lu", next);
 break;
 }
 printf("%lu, ", next);
