@@ -48,6 +48,10 @@ largest = c;
 }
 }
 }
+else
+{
+largest = c;
+}
 
 return (largest);
 }
