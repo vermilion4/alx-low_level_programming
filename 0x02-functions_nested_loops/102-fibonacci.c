@@ -18,10 +18,11 @@ j = k;
 k = next;
 if (i == 49)
 {
-printf("%lu", next);
+printf("%lu\n", next);
 break;
 }
 printf("%lu, ", next);
 }
+
 return (0);
 }
