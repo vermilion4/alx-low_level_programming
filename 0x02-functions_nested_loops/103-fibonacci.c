@@ -22,6 +22,6 @@ if (next <= 4000000 && next % 2 == 0)
 sum += next;
 }
 }
-printf("%lu", sum);
+printf("%lu\n", sum);
 return (0);
 }
