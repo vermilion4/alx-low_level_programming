@@ -14,12 +14,6 @@ int largest;
 
 if (a > b)
 {
-if (b > c)
-{
-largest = a;
-}
-else
-{
 if (a > c)
 {
 largest = a;
@@ -27,17 +21,10 @@ largest = a;
 else
 {
 largest = c;
-}
 }
 }
 else if (b > a)
 {
-if (a > c)
-{
-largest = b;
-}
-else
-{
 if (b > c)
 {
 largest = b;
@@ -45,7 +32,6 @@ largest = b;
 else
 {
 largest = c;
-}
 }
 }
 else
