@@ -38,6 +38,6 @@ else if (num < 10000)
 _putchar(num / 1000 + 48);
 _putchar((num / 100) % 10 + 48);
 _putchar(((num / 10) % 10) + 48);
-_putchar(num % 10 + 48);  
+_putchar(num % 10 + 48);
 }
 }
