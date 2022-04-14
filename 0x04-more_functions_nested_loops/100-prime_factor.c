@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - prints the largest prime factor of the number 612852475143
@@ -9,12 +8,11 @@
 
 int main(void)
 {
-int count, i, j, prime, largest;
-long int testNum = 612852475143;
+long int count, i, j, prime, largest;
 
-for (i = 2; i <= testNum; i++)
+for (i = 2; i <= 612852475143; i++)
 {
-if (testNum % i == 0)
+if (612852475143 % i == 0)
 {
 count = i / 2;
 prime = 1;
@@ -35,6 +33,6 @@ largest = i;
 }
 
 }
-printf("%i\n", largest);
+printf("%lu\n", largest);
 return (0);
 }
