@@ -8,7 +8,7 @@
 
 int main(void)
 {
-long int count, i, j, prime, largest;
+int count, i, j, prime, largest;
 
 for (i = 2; i <= 612852475143; i++)
 {
@@ -33,6 +33,6 @@ largest = i;
 }
 
 }
-printf("%lu\n", largest);
+printf("%d\n", largest);
 return (0);
 }
