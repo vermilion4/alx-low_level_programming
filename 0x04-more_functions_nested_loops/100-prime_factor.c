@@ -10,7 +10,7 @@
 int main(void)
 {
 int count, i, j, prime, largest;
-long long int testNum = 612852475143;
+long int testNum = 612852475143;
 
 for (i = 2; i <= testNum; i++)
 {
@@ -35,6 +35,6 @@ largest = i;
 }
 
 }
-printf("%lu\n", largest);
+printf("%i\n", largest);
 return (0);
 }
