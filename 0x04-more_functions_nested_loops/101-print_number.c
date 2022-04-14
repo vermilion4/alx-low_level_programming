@@ -18,26 +18,10 @@ else
 {
 num = n;
 }
-if (num < 10)
+
+if(num / 10)
 {
-_putchar(num + 48);
+print_number(num / 10);
 }
-else if (num < 100)
-{
-_putchar(num / 10 + 48);
-_putchar(num % 10 + 48);
-}
-else if (num < 1000)
-{
-_putchar(num / 100 + 48);
-_putchar(((num / 10) % 10) + 48);
-_putchar(num % 10 + 48);
-}
-else if (num < 10000)
-{
-_putchar(num / 1000 + 48);
-_putchar((num / 100) % 10 + 48);
-_putchar(((num / 10) % 10) + 48);
-_putchar(num % 10 + 48);
-}
+_putchar((num % 10) + 48);
 }
