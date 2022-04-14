@@ -8,31 +8,16 @@
 
 int main(void)
 {
-int count, i, j, prime, largest;
+long i, num = 612852475143;
 
-for (i = 2; i <= 612852475143; i++)
+for (i = 2; i <= num; i++)
 {
-if (612852475143 % i == 0)
+if (num % i == 0)
 {
-count = i / 2;
-prime = 1;
-
-for (j = 2; j <= count; j++)
-{
-if (i % j == 0)
-{
-prime = 0;
-break;
+num = num / i;
+i--;
 }
 }
-
-if (prime)
-{
-largest = i;
-}
-}
-
-}
-printf("%d\n", largest);
+printf("%lu\n", i);
 return (0);
 }
