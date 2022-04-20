@@ -14,14 +14,15 @@ void print_array(int *a, int n)
 int i;
 
 i = 0;
-while (i <= n)
+while (i < n)
 {
-if (i == n - 1 || i == n)
+if (i == n - 1)
 {
-printf("%d\n", a[i]);
+printf("%d", a[i]);
 break;
 }
 printf("%d, ", a[i]);
 i++;
 }
+_putchar('\n');
 }
