@@ -24,5 +24,8 @@ break;
 printf("%d, ", a[i]);
 i++;
 }
+if (n <= i)
+{
 _putchar('\n');
+}
 }
