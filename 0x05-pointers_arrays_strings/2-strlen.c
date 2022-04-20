@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - updates value it points to to 98
+ * _strlen - prints length of string
  *
  * @s: pointer
+ * Return: count (length of string)
  */
 
 int _strlen(char *s)
