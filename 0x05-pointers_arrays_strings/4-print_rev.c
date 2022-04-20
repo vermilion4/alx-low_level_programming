@@ -1,27 +1,19 @@
 #include "main.h"
-#include <string.h>
 #include <stdio.h>
 
 /**
- * _puts - prints a string, followed by a new line, to stdout.
+ * print_rev - prints a string reversed.
  *
  * @s: pointer
  */
 
 void print_rev(char *s)
 {
-char hold;
+int i = 0;
 
-char *end = s + (strlen(s) - 1);
-
-while (end > s)
-{
-hold = *s;
-*s = *end;
-*end = hold;
-
-_putchar(*s);
-++s, --end;
-}
+while (s[i])
+i++;
+while (i--)
+_putchar(s[i]);
 _putchar('\n');
 }
