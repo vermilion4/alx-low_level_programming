@@ -10,15 +10,18 @@
 
 void print_rev(char *s)
 {
-int len, hold, i;
+int len, hold, i, count;
 len = strlen(s);
+count = 0;
 
-for (i = 0; i < len; i++)
+for (;*s != '\0'; s++)
 {
-hold = s[i];
-s[i] = s[len - i - 1];
-s[len - i - 1] = hold;
+hold = *s;
+*s = *(s + ( len - count - 1));
+*(s + (len - count - 1)) = hold;
 _putchar(*s);
+count++;
 }
+
 _putchar('\n');
 }
