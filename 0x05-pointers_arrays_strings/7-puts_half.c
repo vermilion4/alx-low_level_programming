@@ -12,13 +12,13 @@ int len, mid;
 for (len = 0; str[len] != '\0'; len++)
 ;
 
-if(len % 2 == 0)
+if (len % 2 == 0)
 {
 mid = len / 2;
 }
 else
 {
-mid = (len - 1) / 2;
+mid = ((len - 1) / 2) + 1;
 }
 
 while (mid < len)
