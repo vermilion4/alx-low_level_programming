@@ -1,15 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcat - concatenate strings 
+ * _strncat - concatenate n bytes of string 
  * 
  * @param dest 
  * @param src 
+ * @param n 
  * @return char* 
  */
 
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 int i, j;
 i = 0;
@@ -19,7 +20,7 @@ i++;
 }
 
 j = 0;
-while (src[j] != '\0')
+while (src[j] && j < n)
 {
 dest[i] = src[j];
 i++;
