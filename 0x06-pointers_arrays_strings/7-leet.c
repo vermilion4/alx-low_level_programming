@@ -10,7 +10,7 @@
 
 char *leet(char *s)
 {
-char arr[9] = {'o', 'l', '?', 'e', 'a', '?', '?', 't'};
+char arr[9] = {'o', 'l', 0, 'e', 'a', 0, 0, 't'};
 int i, j;
 
 i = 0;
