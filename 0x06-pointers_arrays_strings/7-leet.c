@@ -10,10 +10,10 @@
 
 char *leet(char *s)
 {
-int i, j;
-i = 0;
 char arr[9] = {'o', 'l', '?', 'e', 'a', '?', '?', 't'};
+int i, j;
 
+i = 0;
 while (s[i])
 {
 j = 0;
