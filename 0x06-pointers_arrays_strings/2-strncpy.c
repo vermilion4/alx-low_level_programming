@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strncpy - 
- * 
- * @param dest 
- * @param src 
- * @param n 
- * @return char* 
+ * _strncpy - copies a string
+ *
+ * @dest: destination parameter
+ * @src: source parameter
+ * @n: n bytes parameter
+ * Return: char*
  */
 
 

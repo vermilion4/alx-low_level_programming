@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strcat - concatenate strings 
- * 
- * @param dest 
- * @param src 
- * @return char* 
+ * _strcat - concatenate strings
+ *
+ * @dest: destination parameter
+ * @src: source parameter
+ * Return: char*
  */
 
 
