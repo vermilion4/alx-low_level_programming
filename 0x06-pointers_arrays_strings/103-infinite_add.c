@@ -11,12 +11,9 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int i, j, calc, longest, n1int, n2int, sum = 0;
-
-i = 0;
+int i = 0, j = 0, calc, longest, n1int, n2int, sum = 0;
 while (n1[i] != '\0')
 i++;
-j = 0;
 while (n2[j] != '\0')
 j++;
 if (i >= j)
@@ -27,8 +24,7 @@ if ((longest + 1) >= size_r)
 return (0);
 r[longest + 1] = '\0';
 i--, j--, size_r--;
-n1int = n1[i] - 48;
-n2int = n2[j] - 48;
+n1int = n1[i] - 48, n2int = n2[j] - 48;
 while (longest >= 0)
 {
 calc = n1int + n2int + sum;
