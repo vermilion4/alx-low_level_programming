@@ -11,7 +11,7 @@
 
 void print_diagsums(int *a, int size)
 {
-int firstsum = 0, secondsum = 0, i = 0 , j;
+int firstsum = 0, secondsum = 0, i = 0, j;
 int *arr = (int *) a;
 while (i < size)
 {
@@ -19,10 +19,10 @@ j = 0;
 while (j < size)
 {
 if (i == j)
-firstsum += arr[i*size + j];
+firstsum += arr[i * size + j];
 
 if ((i + j) == (size - 1))
-secondsum += arr[i*size + j];
+secondsum += arr[i * size + j];
 j++;
 }
 
