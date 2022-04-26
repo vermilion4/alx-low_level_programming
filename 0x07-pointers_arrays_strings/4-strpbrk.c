@@ -11,6 +11,7 @@ char *_strpbrk(char *s, char *accept)
 {
 unsigned int i = 0, j;
 char *p;
+
 while (s[i] >= 0)
 {
 j = 0;
@@ -19,20 +20,12 @@ while (accept[j] >= 0)
 if (s[i] == accept[j])
 {
 p = &s[i];
-break;
-}
-else
-{
-p = 0;
+return (p);
 }
 j++;
-}
-if (p > 0)
-{
-break;
 }
 i++;
 }
 
-return (p);
+return (0);
 }
