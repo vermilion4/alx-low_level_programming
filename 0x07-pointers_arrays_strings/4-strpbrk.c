@@ -22,14 +22,10 @@ if (s[i] == accept[j])
 p = &s[i];
 return (p);
 }
-else
-{
-p = 0;
-}
 j++;
 }
 i++;
 }
 
-return (p);
+return (0);
 }
