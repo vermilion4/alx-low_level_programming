@@ -10,7 +10,7 @@ int natural_sqrt(int n, int min, int max);
 
 int _sqrt_recursion(int n)
 {
-natural_sqrt(n, 1, n);
+return (natural_sqrt(n, 1, n));
 }
 
 /* Find natural square root */
