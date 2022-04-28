@@ -12,9 +12,9 @@ int compare(char *s, int n1, int n2);
 
 int is_palindrome(char *s)
 {
-	if (*s == '\0')
-		return (1);
-	return (compare(s, 0, _strlen(s) - 1));
+if (*s == '\0')
+return (1);
+return (compare(s, 0, _strlen(s) - 1));
 }
 
 /**
@@ -25,10 +25,10 @@ int is_palindrome(char *s)
 
 int _strlen(char *s)
 {
-	if (*s == '\0')
-		return (0);
-	else
-		return (1 + _strlen(s + 1));
+if (*s == '\0')
+return (0);
+else
+return (1 + _strlen(s + 1));
 }
 
 /**
@@ -40,13 +40,11 @@ int _strlen(char *s)
  */
 int compare(char *s, int min, int max)
 {
-	if (s[min] == s[max])
-	{
-		if (min == max || min == max + 1)
-			return (1);
-		return (0 + compare(s, min + 1, max - 1));
-	}
-	return (0);
+if (s[min] == s[max])
+{
+if (min == max || min == max + 1)
+return (1);
+return (0 + compare(s, min + 1, max - 1));
 }
-
-
+return (0);
+}
