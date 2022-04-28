@@ -1,36 +1,36 @@
 #include "main.h"
+int natural_sqrt(int n, int i);
 
 /**
- * factorial - returns factorial of a number.
+ * _sqrt_recursion - returns the natural square root of a number.
  * @n: number
- * Return: factorial of n
+ * Return: natural square root
  */
-
-int natural_sqrt(int n, int min, int max);
 
 int _sqrt_recursion(int n)
 {
-return (natural_sqrt(n, 1, n));
+return (natural_sqrt(n, 0));
 }
 
-/* Find natural square root */
-int natural_sqrt(int n, int min, int max)
-{
-int i = (min + max) / 2;
+/**
+ * natural_sqrt - Find natural square root.
+ * @n: number
+ * @i: factor to test
+ * Return: natural square root
+ */
 
-if (n < 0)
+int natural_sqrt(int n, int i)
+{
+
+if (n < 0 || i == n / 2)
 return (-1);
+
+if (n == 1)
+return (1);
 
 if (i * i == n)
 return (i);
 
-if (min == max)
-return (-1);
-
-else if (i * i < n)
-return (natural_sqrt(n, i + 1, max));
-
-else
-return (natural_sqrt(n, min, i - 1));
+return (natural_sqrt(n, i + 1));
 
 }
