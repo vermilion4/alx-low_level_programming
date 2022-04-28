@@ -28,9 +28,9 @@ if (min == max)
 return (-1);
 
 else if (i * i < n)
-natural_sqrt(n, i + 1, max);
+return (natural_sqrt(n, i + 1, max));
 
 else
-natural_sqrt(n, min, i - 1);
+return (natural_sqrt(n, min, i - 1));
 
 }
