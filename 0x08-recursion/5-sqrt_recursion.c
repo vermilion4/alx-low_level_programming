@@ -22,7 +22,7 @@ return (natural_sqrt(n, 0));
 int natural_sqrt(int n, int i)
 {
 
-if (n < 0 || i == n / 2)
+if (n < 0)
 return (-1);
 
 if (n == 1)
@@ -30,6 +30,9 @@ return (1);
 
 if (i * i == n)
 return (i);
+
+if (i == n / 2)
+return (-1);
 
 return (natural_sqrt(n, i + 1));
 
