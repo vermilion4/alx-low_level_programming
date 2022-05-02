@@ -27,7 +27,7 @@ printf("0\n");
 return (0);
 }
 
-for(; coins[current] != '\0'; current++)
+for (; coins[current] != '\0'; current++)
 {
 if (amount >= coins[current])
 {
