@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include "main.h"
 
 /**
@@ -21,7 +20,7 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-int amount = atoi(argv[1]);
+amount = atoi(argv[1]);
 if (amount < 0)
 {
 printf("0\n");
