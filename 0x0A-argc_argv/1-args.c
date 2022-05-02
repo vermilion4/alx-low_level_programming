@@ -5,7 +5,7 @@
  * main - entry point, print number of arguments
  *
  * @argv: argument vector (unused)
- * @argc: argument count 
+ * @argc: argument count
  * Return: 0
  */
 
