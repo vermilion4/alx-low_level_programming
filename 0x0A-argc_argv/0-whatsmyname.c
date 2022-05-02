@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - entry point 
- * 
+ * main - entry point
+ *
  * @argv: string parameter
- * Return: 0 
+ * @argc: argument count (unused)
+ * Return: 0
  */
 
 int main(__attribute__((unused)) int argc, char **argv)
