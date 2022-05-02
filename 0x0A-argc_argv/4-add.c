@@ -31,6 +31,5 @@ return (1);
 printf("%d\n", sum);
 return (0);
 }
-printf("0\n");
-return (1);
+
 }
