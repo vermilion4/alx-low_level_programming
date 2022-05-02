@@ -7,7 +7,7 @@
  *
  * @argv: argument vector
  * @argc: argument count
- * Return: 0
+ * Return: 0 if 2 args available, 1 otherwise
  */
 
 int main(int argc, char **argv)
@@ -21,9 +21,6 @@ b = atoi(argv[2]);
 printf("%d\n", a *b);
 return (0);
 }
-else
-{
 printf("Error\n");
 return (1);
-}
 }
