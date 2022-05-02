@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -20,12 +21,18 @@ if (atoi(argv[i]))
 {
 sum += atoi(argv[i]);
 }
+else if (!atoi(argv[i]) && i == 1)
+{
+printf("%d\n", 0);
+return (1);
+}
 else
 {
 printf("Error\n");
 return (1);
 }
 }
+
 printf("%d\n", sum);
 return (0);
 }
