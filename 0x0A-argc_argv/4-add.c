@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 {
 int i = 1, j, sum = 0;
 
-while(i < argc)
+while (i < argc)
 {
 j = 0;
 while (argv[i][j] != '\0')
