@@ -4,7 +4,7 @@
 
 /**
  * alloc_grid - function that returns a pointer
- * to a 2 dimensional array of integers..
+ * to a 2 dimensional pay of integers..
  *
  * @width: parameter 1
  * @height: parameter 2
@@ -14,19 +14,20 @@
 int **alloc_grid(int width, int height)
 {
 int i, j;
+int **p;
 
 if (height <= 0 || width <= 0)
 return (NULL);
 
-int **arr = malloc(sizeof(*arr) * height);
+p = malloc(sizeof(*p) * height);
 
-if (arr == NULL)
+if (p == NULL)
 return (NULL);
 
 for (i = 0; i < height; i++)
 {
-arr[i] = malloc(sizeof(arr) * width);
-if (arr[i] == NULL)
+p[i] = malloc(sizeof(p) * width);
+if (p[i] == NULL)
 return (NULL);
 }
 
@@ -34,9 +35,9 @@ for (i = 0; i < height; i++)
 {
 for (j = 0; j < width; j++)
 {
-arr[i][j] = 0;
+p[i][j] = 0;
 }
 }
 
-return (arr);
+return (p);
 }
