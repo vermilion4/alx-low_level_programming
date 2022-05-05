@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * create_array - function that creates an array of chars, and initializes it with a specific char
+ * create_array - function that creates an array
+ * of chars, and initializes it with a specific char
  *
  * @size: size of array
  * @c: specific char
@@ -18,7 +19,11 @@ if (size == 0)
 {
 return (NULL);
 }
-
+if (p == NULL)
+{
+printf("failed to allocate memory\n");
+return (1);
+}
 i = 0;
 while (i < size)
 {
