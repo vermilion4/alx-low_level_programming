@@ -6,6 +6,7 @@
  *
  * @size: size of array
  * @c: specific char
+ * Return: array if success, null otherwise
  */
 
 char *create_array(unsigned int size, char c)
@@ -25,6 +26,5 @@ p[i] = c;
 i++;
 }
 p[i] = '\0';
-free(p);
 return (p);
 }
