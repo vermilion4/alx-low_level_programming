@@ -7,40 +7,42 @@
  *
  * @s1: parameter 1
  * @s2: parameter 2
- * Return: pointer if success.
+ * Return: pointer of concat if success.
  */
 
 char *str_concat(char *s1, char *s2)
 {
-unsigned int i, j, k;
+unsigned int strlen1, strlen2, i, j;
 char *p;
 
-if (s1 == NULL || s2 == NULL)
+strlen1 = 0;
+while (s1[strlen1])
+strlen1++;
+
+strlen2 = 0;
+while (s2[strlen2])
+strlen2++;
+
+p = malloc(sizeof(*p) * (strlen1 + strlen2 + 1));
+
+if (p == NULL)
 return (NULL);
 
 i = 0;
-while (s1[i])
+while (s1 && i < strlen1)
+{
+p[i] = s1[i];
 i++;
+}
 
 j = 0;
-while (s2[j] != '\0')
+while (s2 && (i < (strlen1 + strlen2)))
 {
-s1[i] = s2[j];
+p[i] = s2[j];
 i++;
 j++;
 }
-printf("%d", i);
-p = malloc(sizeof(*p) * (i + 1));
-
-if (p == NULL)
-return (0);
-
-k = 0;
-while (s1[k] != '\0')
-{
-p[k] = s1[k];
-k++;
-}
+p[i] = '\0';
 
 return (p);
 }
