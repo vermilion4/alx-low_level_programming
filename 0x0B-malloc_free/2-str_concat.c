@@ -16,11 +16,11 @@ unsigned int strlen1, strlen2, i, j;
 char *p;
 
 strlen1 = 0;
-while (s1[strlen1])
+while (s1 && s1[strlen1])
 strlen1++;
 
 strlen2 = 0;
-while (s2[strlen2])
+while (s2 && s2[strlen2])
 strlen2++;
 
 p = malloc(sizeof(*p) * (strlen1 + strlen2 + 1));
@@ -29,19 +29,20 @@ if (p == NULL)
 return (NULL);
 
 i = 0;
-while (s1 && i < strlen1)
+while (i < strlen1)
 {
 p[i] = s1[i];
 i++;
 }
 
 j = 0;
-while (s2 && (i < (strlen1 + strlen2)))
+while (i < (strlen1 + strlen2))
 {
 p[i] = s2[j];
 i++;
 j++;
 }
+
 p[i] = '\0';
 
 return (p);
