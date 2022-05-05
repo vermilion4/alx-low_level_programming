@@ -28,7 +28,10 @@ for (i = 0; i < height; i++)
 {
 p[i] = malloc(sizeof(p) * width);
 if (p[i] == NULL)
+{
+free(p);
 return (NULL);
+}
 }
 
 for (i = 0; i < height; i++)
