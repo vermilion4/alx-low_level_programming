@@ -33,6 +33,6 @@ p[i] = c;
 i++;
 }
 p[i] = '\0';
-return (p);
 }
+return (p);
 }
