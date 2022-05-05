@@ -22,9 +22,10 @@ return (NULL);
 }
 if (p == NULL)
 {
-printf("failed to allocate memory\n");
-return (1);
+fprintf(stderr, "failed to allocate memory\n", strerror(errno));
 }
+else
+{
 i = 0;
 while (i < size)
 {
@@ -33,4 +34,5 @@ i++;
 }
 p[i] = '\0';
 return (p);
+}
 }
