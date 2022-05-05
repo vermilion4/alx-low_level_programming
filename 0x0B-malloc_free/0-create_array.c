@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <errno.h>
 
 /**
  * create_array - function that creates an array
