@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * count_word - function to count the number of words in a string
+ * word_count - function to count the number of words in a string
  * @s: string
  *
  * Return: number of words
@@ -29,7 +29,7 @@ return (num);
  * **strtow - function that splits a string into words
  * @str: string
  *
- * Return: pointer to an array of strings if success, 
+ * Return: pointer to an array of strings if success,
  * NULL otherwise
  */
 
