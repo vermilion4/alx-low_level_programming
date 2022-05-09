@@ -30,7 +30,7 @@ while (*c)
 {
 if (*c < '0' || *c > '9')
 return (0);
-*c++;
+c++;
 }
 return (1);
 }
@@ -40,8 +40,8 @@ return (1);
  */
 void error(void)
 {
-	printf("Error\n");
-	exit(98);
+printf("Error\n");
+exit(98);
 }
 
 /**
