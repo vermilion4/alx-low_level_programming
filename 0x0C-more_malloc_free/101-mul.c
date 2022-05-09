@@ -37,6 +37,15 @@ return (1);
 }
 
 /**
+ * error - handles error
+ */
+void error(void)
+{
+	printf("Error\n");
+	exit(98);
+}
+
+/**
  * main - multiplies two positive numbers
  * @argc: arg count
  * @argv: arg vector
@@ -49,10 +58,7 @@ char *p1, *p2;
 int i, *mul, len, len1, len2, first, second, remainder, a = 0;
 p1 = argv[1], p2 = argv[2];
 if (argc != 3 || !_isdigit(p1) || !_isdigit(p2))
-{
-printf("Error\n");
-exit(98);
-}
+error();
 len1 = _strlen(p1), len2 = _strlen(p2);
 len = len1 + len2 + 1;
 mul = malloc(len *sizeof(*mul));
