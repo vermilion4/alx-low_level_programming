@@ -23,11 +23,11 @@ while (s2 && s2[len2])
 len2++;
 
 if (n >= len2)
-p = malloc(sizeof(*s1) * len1 + sizeof(*s2) * (len2 + 1));
+p = malloc(sizeof(*s1) * len1 + (len2 + 1));
 else
-p = malloc(sizeof(*s1) * len1 + sizeof(*s2) * (n + 1));
+p = malloc(sizeof(*s1) * len1 + (n + 1));
 
-if (!p)
+if (p == NULL)
 return (NULL);
 
 i = 0;
