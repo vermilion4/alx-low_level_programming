@@ -31,7 +31,7 @@ if (p == NULL)
 return (NULL);
 
 i = 0;
-while (s1[i] != '\0')
+while (i < len1)
 {
 p[i] = s1[i];
 i++;
