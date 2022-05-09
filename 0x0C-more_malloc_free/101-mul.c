@@ -25,7 +25,7 @@ return (i);
  * @c: string parameter
  * Return: 0 if non-digit found, 1 otherwise
  */
-int _isdigit(char *s)
+int is_digit(char *s)
 {
 int i = 0;
 
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 char *p1, *p2;
 int i, *mul, len, len1, len2, first, second, remainder, a = 0;
 p1 = argv[1], p2 = argv[2];
-if (argc != 3 || !_isdigit(p1) || !_isdigit(p2))
+if (argc != 3 || !is_digit(p1) || !is_digit(p2))
 error();
 len1 = _strlen(p1), len2 = _strlen(p2);
 len = len1 + len2 + 1;
