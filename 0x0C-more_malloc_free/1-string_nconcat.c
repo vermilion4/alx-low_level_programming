@@ -22,10 +22,10 @@ len1++;
 while (s2 && s2[len2])
 len2++;
 
-if (n < len2)
-p = malloc(sizeof(*s1) * len1 + sizeof(*s2) * (n+1));
-else
+if (n >= len2)
 p = malloc(sizeof(*s1) * len1 + sizeof(*s2) * (len2+1));
+else
+p = malloc(sizeof(*s1) * len1 + sizeof(*s2) * (n+1));
 
 if (p == NULL)
 return (NULL);
@@ -38,27 +38,19 @@ i++;
 }
 
 j = 0;
-while (*s2 != '\0')
-{
-if (n >= len2)
+while (n < len2 && i < (len1 + n))
 {
 p[i] = s2[j];
 i++;
 j++;
 }
-else
-{
-while (j < n)
+while (n >= len2 && i < (len1 + len2))
 {
 p[i] = s2[j];
 i++;
 j++;
 }
+
 p[i] = '\0';
-}
-s2++;
-}
-
 return (p);
-
 }
