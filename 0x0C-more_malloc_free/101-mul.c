@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * _strlen - prints length of string
@@ -31,7 +30,7 @@ while (*c)
 {
 if (*c < '0' || *c > '9')
 return (0);
-c++;
+*c++;
 }
 return (1);
 }
