@@ -37,13 +37,13 @@ old_p = ptr;
 
 if (new_size > old_size)
 {
-for (i = 0; i < new_size; i++)
+for (i = 0; i < old_size; i++)
 p[i] = old_p[i];
 }
 
 if (old_size > new_size)
 {
-for (i = 0; i < old_size; i++)
+for (i = 0; i < new_size; i++)
 p[i] = old_p[i];
 }
 
