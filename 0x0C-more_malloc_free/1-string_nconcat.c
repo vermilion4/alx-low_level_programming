@@ -27,7 +27,7 @@ p = malloc(sizeof(*s1) * len1 + sizeof(*s2) * (len2 + 1));
 else
 p = malloc(sizeof(*s1) * len1 + sizeof(*s2) * (n + 1));
 
-if (p == NULL)
+if (!p)
 return (NULL);
 
 i = 0;
