@@ -30,8 +30,6 @@ return (count);
  */
 int _isdigit(char *c)
 {
-int i = 0;
-
 while (*c)
 {
 if (*c < '0' || *c > '9')
