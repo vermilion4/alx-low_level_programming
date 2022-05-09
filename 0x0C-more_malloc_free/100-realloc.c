@@ -25,12 +25,12 @@ return (malloc(new_size));
 
 if (new_size == 0 && ptr != NULL)
 {
-free (ptr);
+free(ptr);
 return (NULL);
 }
 
 old_p = ptr;
-p = malloc (new_size);
+p = malloc(new_size);
 
 if (p == NULL)
 return (NULL);
@@ -47,6 +47,6 @@ for (i = 0; i < old_size; i++)
 p[i] = old_p[i];
 }
 
-free (ptr);
+free(ptr);
 return (p);
 }
