@@ -65,7 +65,7 @@ len2 = _strlen(p2);
 
 len = len1 + len2 + 1;
 
-mul = malloc(len * sizeof(*mul));
+mul = malloc(len *sizeof(*mul));
 
 if (mul == NULL)
 		return (1);
