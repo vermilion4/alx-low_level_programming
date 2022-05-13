@@ -10,7 +10,6 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-int i;
 op_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
@@ -20,14 +19,10 @@ op_t ops[] = {
 {NULL, NULL}
 };
 
-for (i = 0; ops[i].op != NULL; i++)
-{
-if (strcmp(s, ops[i].op) == 0)
-{
+int i;
+
+while (ops[i].op != NULL && strcmp(s, ops[i].op) != 0)
+i++;
+
 return (ops[i].f);
-}
-}
-return (NULL);
-
-
 }
