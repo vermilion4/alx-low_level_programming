@@ -27,6 +27,12 @@ char *op;
         printf("Error\n");
         exit(99);
     }
+
+    if ((num2 == 0 && op[0] == '/') || (num2 == 0 && op[0] == '%'))
+    {
+        printf("Error\n");
+        exit(100);
+    }
     res = (*get_op_func(op))(num1, num2);
     printf("%d\n", res);
     return (0);
