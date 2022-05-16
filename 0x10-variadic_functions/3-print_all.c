@@ -45,7 +45,7 @@ void print_string(va_list s)
 {
 char *st;
 
-st = va_arg(st, char *);
+st = va_arg(s, char *);
 if (st == NULL)
 st = "(nil)";
 printf("%s", st);
