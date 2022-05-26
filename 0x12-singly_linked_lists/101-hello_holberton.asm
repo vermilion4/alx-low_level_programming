@@ -10,7 +10,5 @@ main:
             mov edi, fmt
             mov eax, 0
             call printf
-            mov eax, 1
+            mov eax, 0
             ret
-            """
-        self.assertEqual(assembler.assemble(code), expected)
