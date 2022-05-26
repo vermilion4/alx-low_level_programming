@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "lists.h"
 
-/** 
+/**
  * print_list - prints all the elements of a list
  * @h: pointer to the head of the list
  * Return: number of elements in the list
