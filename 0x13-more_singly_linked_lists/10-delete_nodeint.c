@@ -14,7 +14,7 @@ listint_t *temp;
 listint_t *temp2;
 unsigned int i;
 
-if (head == NULL)
+if (*head == NULL)
 return (-1);
 if (index == 0)
 {
