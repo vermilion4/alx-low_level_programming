@@ -16,15 +16,14 @@ while (head)
 temp = head - head->next;
 i++;
 printf("[%p] %d\n", (void *)head, head->n);
-if (temp < 0)
+if (temp > 0)
+head = head->next;
+else
 {
 printf("-> [%p] %d\n", (void *)head->next, head->next->n);
 break;
 }
-else
-{
-head = head->next;
 }
-}
+
 return (i);
 }
