@@ -18,6 +18,7 @@ next = *head->next;
 prev = *head;
 *head = next;
 }
+
 *head = prev;
 return (*head);
 }
