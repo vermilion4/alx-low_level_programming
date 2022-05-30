@@ -19,7 +19,7 @@ if (head == NULL)
 return (NULL);
 
 new = malloc(sizeof(listint_t));
-if (new == NULL)
+if (!new || !head)
 return (NULL);
 
 new->n = n;
