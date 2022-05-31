@@ -30,7 +30,7 @@ else
 free(*h);
 *h = NULL;
 size++;
-break
+break;
 }
 }
 
