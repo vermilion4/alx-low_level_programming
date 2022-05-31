@@ -3,8 +3,8 @@
 /**
  * free_listint_safe - frees a listint_t list
  * @h: pointer to the first element of the list
- * return: size of list that was freed
- */ 
+ * Return: size of list that was freed
+ */
 
 size_t free_listint_safe(listint_t **h)
 {
