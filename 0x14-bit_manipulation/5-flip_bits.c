@@ -1,25 +1,26 @@
 #include "main.h"
 
 /**
- * flip_bits - flips the bits of a number
+ * flip_bits - number of bits to be flipped
  * @n: number to be converted
  * @m: number of bits to be flipped
- * Return: the converted number
+ * Return: number of bits needed to flip to get m
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned long int result = 0;
-unsigned int i;
+unsigned int i, count;
+unsigned long int mask;
 
+count = 0;
+mask = 1;
 for (i = 0; i < sizeof(unsigned long int) * 8; i++)
 {
-if ((n & 1) != (m & 1))
+if ((n & mask) != (m & mask))
 {
-set_bit(&result, i);
+count++;
 }
-n >>= 1;
-m >>= 1;
+mask = mask << 1;
 }
-return (result);
+return (count);
 }
