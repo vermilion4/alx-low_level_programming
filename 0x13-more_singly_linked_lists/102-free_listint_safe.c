@@ -17,13 +17,23 @@ return (0);
 
 while (*h)
 {
-temp = *h;
-ptr = (int)temp->next;
-*h = (*h)->next;
-free(temp);
-if (ptr == (int)*h)
-return (0);
+ptr = *h - (*h)->next;
+if (ptr > 0)
+{
+temp = (*h)->next;
+free(*h);
+*h = temp;
 size++;
 }
+else
+{
+free(*h);
+*h = NULL;
+size++;
+break
+}
+}
+
+*h = NULL;
 return (size);
 }
