@@ -6,15 +6,16 @@
  * @letters: number of letters to read from the file
  * Return: number of letters read
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 char *buffer = malloc(letters);
-ssize_t string_size;
-ssize_t read_size;
+ssize_t fd, string_size, read_size;
 
 if (filename == NULL)
 return (0);
-ssize_t fd = open(filename, O_RDONLY);
+
+fd = open(filename, O_RDONLY);
 
 if (fd == -1)
 {
