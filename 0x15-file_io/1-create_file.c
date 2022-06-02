@@ -10,7 +10,7 @@
 int create_file(const char *filename, char *text_content)
 {
 int fd;
-int size;
+int size, fwrite;
 int i;
 
 if (filename == NULL)
@@ -31,9 +31,11 @@ size++;
 i = 0;
 while (i < size)
 {
-write(fd, &text_content[i], 1);
+fwrite = write(fd, &text_content[i], 1);
 i++;
 }
+if (fwrite == -1)
+return (-1);
 close(fd);
 return (1);
 }
