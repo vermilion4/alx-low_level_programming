@@ -11,7 +11,6 @@ int create_file(const char *filename, char *text_content)
 {
 int fd;
 int size, fwrite;
-int i;
 
 if (filename == NULL)
 {
@@ -23,19 +22,15 @@ if (fd == -1)
 {
 return (-1);
 }
-size = 0;
-while (text_content[size] != '\0')
+
+if (text_content != NULL)
 {
-size++;
-}
-i = 0;
-while (i < size)
-{
-fwrite = write(fd, &text_content[i], 1);
-i++;
-}
+for (size = 0; text_content[size] != '\0'; size++)
+;
+fwrite = write(fd, text_content, size);
 if (fwrite == -1)
 return (-1);
+}
 close(fd);
 return (1);
 }
